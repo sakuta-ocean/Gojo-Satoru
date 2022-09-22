@@ -19,32 +19,32 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['Your Number']
-global.premium = ['Your Number']
-global.ownernomer = 'Your Number'
-global.ownername = '🐦Star Boy Nexus'
-global.botname = 'Gojo-Satoru'
-global.footer = '©NexusNwInc.'
+global.owner = ['966576500382']
+global.premium = ['966576500382']
+global.ownernomer = '966576500382'
+global.ownername = '( الـمـطـور )'
+global.botname = '( بـوت ريودو )'
+global.footer = '( ريودو )'
 global.ig = 'https://github.com/nexusNw'
 global.region = 'India, South India, Kerala'
-global.sc = 'https://github.com/nexusNw/Gojo-Satoru'
-global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ'
-global.packname = 'Gojo-Satoru'
-global.author = '🐦Star Boy Nexus'
+global.sc = 'https://chat.whatsapp.com/CTNPgNrr6DZIFbOUIwjQmi'
+global.myweb = 'https://www.youtube.com/channel/UCdCMQuPNFYLOI7bfr4tgAxw'
+global.packname = 'https://Wa.Me/+966576500382'
+global.author = '[ ساكوتا ]'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'Wait A minute...',
-    error: 'Error! Maybe Api Key Is Expired🤔!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
+    success: '✓',
+    admin: '*「 امر خاص بالمشرفين ما يمديك تستخدمه للاسف 」◣*',
+    botAdmin: '*「 عطيني اشراف واسويلك الامر 」◣*',
+    owner: '*「 الامر هذا خاص بالمطور بس 」◣*',
+    group: '*「 الامر ذا بس في القروبات 」◣*',
+    private: '*「 الامر ذا في الخاص بس 」◣*',
+    bot: '*「 الاكر ذا خاص بالبوت بس 」◣*',
+    wait: '*「 استنى شوي بس 」◣*',
+    error: 'خطا انتهت الصلاحية',
+    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 1000 Hours',
 }
     global.limitawal = {
     premium: "Infinity",
