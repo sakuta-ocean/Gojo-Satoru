@@ -1443,7 +1443,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `「المنشن الجماعي」◣
  
- ➲ *${q ? q : 'اصحو من النوم'}*\n\n`
+ ➲ *${q ? q : 'اصحى يا نايم'}*\n\n`
                 for (let mem of participants) {
                 teks += `👤 @${mem.id.split('@')[0]}\n`
                 }
@@ -1761,7 +1761,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '「 المالك 」「👤」◣',
+                                    displayText: '「 المطور 」「👤」◣',
                                     id: 'owner'
                                 }
                             }]
@@ -1795,7 +1795,7 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '「 المالك 」「👤」◣',
+                                    displayText: '「 المطور 」「👤」◣',
                                     id: 'owner'
                                 }
                             }]
@@ -3146,7 +3146,7 @@ reply(`*「 تم اضافة الرسالة」◣*'${text}'
 	    break
             case 'حذف.الرسالة': case 'deletemsg': {
 	        let msgs = global.db.data.database
-	        if (!(text.toLowerCase() in msgs)) return reply(`*「 هذا الامر غير موجود ف القائمة 」◣*`)
+	        if (!(text.toLowerCase() in msgs)) return reply(`*「 هذا الامر غير موجود في القائمة 」◣*`)
 		delete msgs[text.toLowerCase()]
 		reply(`*「 تم حذف الامر '${text}' من قائمة الرسائل 」◣*`)
             }
@@ -3384,7 +3384,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `┌─❖
 ┌─❖ مـرحبـاً 」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 🏻」◣
+││✑「مـعـك بـوت ريودو 🏻」◣
 ││✑「مـن مـمـلـكـة اوشن 」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
@@ -3416,7 +3416,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '「 المالك 」「👤」◣',
+                                    displayText: '「 المطور 」「👤」◣',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3471,7 +3471,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '「 المالك 」「👤」◣',
+                                    displayText: '「 المطور 」「👤」◣',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3491,7 +3491,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		    「https://chat.whatsapp.com/CTNPgNrr6DZIFbOUIwjQmi」◣
 		    「رقم المطور ساكوتا」◣                 
  「https://wa.me/‪+966576500382」◣
-		    「」◣
+		    「البوت الخاص بمملكة اوشن」◣
 		    「」◣`,
                     description: `「 اختر قائمة من فضلك 」◣`,
                     buttonText: "「 القائمة 」◣",
@@ -3584,26 +3584,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 											"title": "قائمة اضافية",
 										"description": ".16.",
 										"rowId": `${prefix}horoscopemenu`
-										}
-								]
-							},
-							{
-								"title": "المملكة",
-								"rows": [
-									{
-										"title": "قائمة استمارات مملكة اوشن",
-										"description": ".17.",
-										"rowId": `${prefix}anon`
-									}
-								]
-							},
-							{
-								"title": "نبذة",
-								"rows": [
-									{
-										"title": "تاريخ مملكة اوشن",
-										"description": ".18.",
-										"rowId": `${prefix}tqtt`
+										}"rowId": `${prefix}tqtt`
 									}
 								]
 							}
@@ -3617,11 +3598,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': {
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `` }, { quoted: m })
             }
-            break
-            case 'التسجhgjيل': case 'التسجيل': {
-                reply(`「 الفرع الخاص ل التعليم على البوت 」◣
-
-「 _https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3_ 」◣
+          
 
 「 نرحب بالجميع. 」◣`)
             }
@@ -4148,7 +4125,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'.18.')
-await GojoMdNx.send5ButImg(from, `` + '' + ' ', `مملكة اوشن تضم حوالي رقم مهجول من النقابات من افضل الممالك بقيادة الامبراطور توشيرو والنائب ساتومي من نأحية التحديات والمسابقات كانت المملكة من الاوائل وقتها لكن في مرة من الايام تعطل هاتف الامبراطور توشيرو واختفى حوالي سنتين وعندما عاد  اختفت المملكة وكل شيء  والان هو يحاول ان يحيئ مملكته من البداية التي لاتضم اي نقابة حاليا وخطوته الاولى كانت بأن يعمل بوت وهو انا كيف تشوفوني ؟ ههه مو مشكلة المهم توشيرو  يقول اذا بدكم تنضمون معنا اضغطو ع زر رابط الاستقبال.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+await GojoMdNx.send5ButImg(from, `` + '' + ' ', `.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
