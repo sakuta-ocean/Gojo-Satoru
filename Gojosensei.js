@@ -1151,10 +1151,10 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `「مبروك واعتبره/ا زوجك/تك 」◣
+            let jawab = `「مبروك واعتبره/ا زوجك/تك 🤡」◣
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-「اضغط اقبل اذا موافق 😂🤡」◣`
+「اضغط اقبل اذا موافق 」◣`
             let ments = [me, jodoh]
             let buttons = [
                         { buttonId: '「اقبل」◣', buttonText: { displayText: '「اقبل」◣' }, type: 1 }
@@ -1168,11 +1168,11 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-	    「 معلش زوجناكم لأنكم تصلحون لبعض 」◣
+	    「 معلش زوجناكم لأنكم تصلحون لبعض  」◣
 	    「 الي يشوفهم مناسبين لبعض زيي يضغط يب  」◣`
             let menst = [orang, jodoh]
             let buttons = [
-                        { buttonId: '「 يب هم مناسبين لبعض 」◣', buttonText: { displayText: '「 يب هم مناسبين لبعض」◣' }, type: 1 }
+                        { buttonId: '「 يب 」◣', buttonText: { displayText: '「 يب  」◣' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: menst})
             }
@@ -1291,8 +1291,8 @@ GojoMdNx.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `「 اكبر *${command}* في القروب هو @${jodoh.split('@')[0]} 」◣
-	    「 هل *${command}* هو الاكبر؟ 」◣`
+            let jawab = `「 اكبر *${command}* في الجروب هو @${jodoh.split('@')[0]} 」◣
+	    「 صح؟  」◣`
             let ments = [me, jodoh]
             let buttons = [
                         { buttonId: '「 يب 」◣', buttonText: { displayText: '「 يب 」◣' }, type: 1 }
@@ -1443,7 +1443,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `「المنشن الجماعي」◣
  
- ➲ *${q ? q : 'اصحى يا نايم'}*\n\n`
+ ➲ *${q ? q : 'تعال تملقف'}*\n\n`
                 for (let mem of participants) {
                 teks += `👤 @${mem.id.split('@')[0]}\n`
                 }
@@ -1761,14 +1761,14 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '「 المطور 」「👤」◣',
+                                    displayText: '「 المالك 」「👤」◣',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 ريودو موجود 🎉 」\n\n${text}`
+                      let txt = `「 بوت ساكوتا موجود 🎉 」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
-                reply(`「 تم   」◣`)
+                reply(`「 تم  」◣`)
             }
             break
             case 'رسالة.جماعية': case 'رسالة.جماعية.الكل': case 'bcall': {
@@ -1795,14 +1795,14 @@ break
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '「 المطور 」「👤」◣',
+                                    displayText: '「 المالك 」「👤」◣',
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 ريودو موجود 🎉」\n\n${text}`
+                      let txt = `「 بوت ساكوتا موجود 🎉」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
-		reply('「 تم  」◣')
+		reply('「 تم 🤗 」◣')
             }
             break
             case 'chatinfo': case 'infochat': {
@@ -3146,7 +3146,7 @@ reply(`*「 تم اضافة الرسالة」◣*'${text}'
 	    break
             case 'حذف.الرسالة': case 'deletemsg': {
 	        let msgs = global.db.data.database
-	        if (!(text.toLowerCase() in msgs)) return reply(`*「 هذا الامر غير موجود في القائمة 」◣*`)
+	        if (!(text.toLowerCase() in msgs)) return reply(`*「 هذا الامر غير موجود ف القائمة 」◣*`)
 		delete msgs[text.toLowerCase()]
 		reply(`*「 تم حذف الامر '${text}' من قائمة الرسائل 」◣*`)
             }
@@ -3384,15 +3384,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `┌─❖
 ┌─❖ مـرحبـاً 」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت ريودو 🏻」◣
+││✑「مـعـك بـوت ساكوتا 」◣
 ││✑「مـن مـمـلـكـة اوشن 」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 ريودو 」◣
+│✙「 اسـم الـبـوت 」◣ : 「 ساكوتا 」◣
 │✙「 رقـم الـمـالـك 」◣ : ${global.owner}
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات  」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات 」◣
    └───────────────┈ ⳹`,
                              hydratedButtons: [{
                                 urlButton: {
@@ -3416,7 +3416,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '「 المطور 」「👤」◣',
+                                    displayText: '「 المالك 」「👤」◣',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3437,17 +3437,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')}, 
                             hydratedFooterText: `
-┌─❖ مـرحبـاً 🤗 」
+┌─❖ مـرحبـاً  」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت ريودو 」◣
-││✑「مـن مـمـلـكـة اوشن 」◣
+││✑「مـعـك بـوت ساكوتا」◣
+││✑「مـن مـمـلـكـة اوشن」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 ريودو 」◣
+│✙「 اسـم الـبـوت 」◣ : 「ساكوتا」◣
 │✙「 رقـم الـمـالـك 」◣ : ${global.owner}
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات  」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات 」◣
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3471,7 +3471,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '「 المطور 」「👤」◣',
+                                    displayText: '「 المالك 」「👤」◣',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3485,14 +3485,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `「 مرحبا 」◣
-		    「 معك بوت ريودو 」◣
-		    「 افضل بوت عربي 」◣
- 「استقبال مملكة اوشن」◣
-		    「https://chat.whatsapp.com/CTNPgNrr6DZIFbOUIwjQmi」◣
-		    「رقم المطور ساكوتا」◣                 
- 「https://wa.me/‪+966576500382」◣
-		    「البوت الخاص بمملكة اوشن」◣
-		    「」◣`,
+		    「 معك بوت ساكوتا 」◣
+		    「 ارجل بوت」◣
+
+ 「رابط استقبال المملكة」◣
+		    「 https://chat.whatsapp.com/CTNPgNrr6DZIFbOUIwjQmi 」◣
+		    「رابط موقع المملكة」◣                 
+ 「 https://62f72ff6d38a1.site123.me/ 」◣
+		    「رابط قوانين المملكة」◣
+		    「 https://2u.pw/8mdK8 」◣`,
                     description: `「 اختر قائمة من فضلك 」◣`,
                     buttonText: "「 القائمة 」◣",
                     footerText: `「 تحت الصيانة ⚙️」◣`,
@@ -3584,7 +3585,26 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 											"title": "قائمة اضافية",
 										"description": ".16.",
 										"rowId": `${prefix}horoscopemenu`
-										}"rowId": `${prefix}tqtt`
+										}
+								]
+							},
+							{
+								"title": "المملكة",
+								"rows": [
+									{
+										"title": "قائمة استمارات مملكة اوشن",
+										"description": ".17.",
+										"rowId": `${prefix}anon`
+									}
+								]
+							},
+							{
+								"title": "نبذة",
+								"rows": [
+									{
+										"title": "تاريخ مملكة اوشن",
+										"description": ".18.",
+										"rowId": `${prefix}tqtt`
 									}
 								]
 							}
@@ -3598,7 +3618,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': {
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/c15f725add0381fb69c4b.jpg' }, caption: `` }, { quoted: m })
             }
-          
+            break
+            case 'التسجhgjيل': case 'التسجيل': {
+                reply(`「استقبال المملكة」◣
+
+「 https://chat.whatsapp.com/CTNPgNrr6DZIFbOUIwjQmi 」◣
 
 「 نرحب بالجميع. 」◣`)
             }
@@ -4125,7 +4149,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'.18.')
-await GojoMdNx.send5ButImg(from, `` + '' + ' ', `.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+await GojoMdNx.send5ButImg(from, `` + '' + ' ', `مملكة غولد كانت تضم حوالي 50 نقابة كانت من افضل الممالك قديما بقيادة الامبراطور توشيرو والنائب ساتومي من نأحية التحديات والمسابقات كانت المملكة من الاوائل وقتها لكن في مرة من الايام تعطل هاتف الامبراطور توشيرو واختفى حوالي سنتين وعندما عاد  اختفت المملكة وكل شيء  والان هو يحاول ان يحيئ مملكته من البداية التي لاتضم اي نقابة حاليا وخطوته الاولى كانت بأن يعمل بوت وهو انا كيف تشوفوني ؟ ههه مو مشكلة المهم توشيرو  يقول اذا بدكم تنضمون معنا اضغطو ع زر رابط الاستقبال.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
